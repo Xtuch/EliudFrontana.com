@@ -24,7 +24,7 @@ h2 {
     font-size: 2em; /* Set the desired size for the last name */
     margin: 0;
     color: #333;
-    margin-left: 20px; /* Indent the last name */
+    margin-left: 100px; /* Indent the last name */
 }
 
 .profile-image {
