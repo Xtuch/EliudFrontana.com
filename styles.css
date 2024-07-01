@@ -29,7 +29,7 @@ h2 {
 
 .profile-image {
     margin-top: 20px; /* Adjust the margin as needed */
-    margin-left: 100px; /* Indent the last name */
+    margin-left: 500px; /* Indent the last name */
     width: 150px; /* Set the desired width */
     height: 150px; /* Maintain aspect ratio */
     border-radius: 50%; /* Make the image circular */
