@@ -17,8 +17,8 @@ body {
 .lastname {
     
     position: absolute;
-    top: 200px; /* Adjust this value to control how close the text is to the top */
-    left: 100px; /* Adjust this value to control how close the text is to the left edge */
+    top: 100px; /* Adjust this value to control how close the text is to the top */
+    left: 40px; /* Adjust this value to control how close the text is to the left edge */
     text-align: left; /* Align text to the left */
 }
 
