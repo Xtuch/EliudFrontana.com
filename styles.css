@@ -8,7 +8,7 @@ body {
 }
 
 .container {
-    text-align: center;
+    text-align: left;
     position: absolute;
     top: 20px; /* Adjust this value to control how close the text is to the top */
     left: 50%;
