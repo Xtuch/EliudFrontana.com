@@ -7,14 +7,28 @@ body {
     position: relative;
 }
 
-.container {
+.name {
     position: absolute;
     top: 20px; /* Adjust this value to control how close the text is to the top */
     left: 20px; /* Adjust this value to control how close the text is to the left edge */
     text-align: left; /* Align text to the left */
 }
 
+.lastname {
+    
+    position: absolute;
+    top: 40px; /* Adjust this value to control how close the text is to the top */
+    left: 40px; /* Adjust this value to control how close the text is to the left edge */
+    text-align: left; /* Align text to the left */
+}
+
 h1 {
+    font-size: 5em;
+    margin: 0;
+    color: #333;
+}
+
+h2 {
     font-size: 5em;
     margin: 0;
     color: #333;
