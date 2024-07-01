@@ -12,7 +12,7 @@ body {
     position: absolute;
     top: 20px; /* Adjust this value to control how close the text is to the top */
     left: 10%;
-    transform: translateX(-50%);
+    transform: translateX(-10%);
 }
 
 h1 {
