@@ -8,11 +8,10 @@ body {
 }
 
 .container {
-    text-align: left;
     position: absolute;
     top: 20px; /* Adjust this value to control how close the text is to the top */
-    left: 10%;
-    transform: translateX(-10%);
+    left: 20px; /* Adjust this value to control how close the text is to the left edge */
+    text-align: left; /* Align text to the left */
 }
 
 h1 {
@@ -23,8 +22,9 @@ h1 {
 
 .profile-image {
     margin-top: 20px; /* Adjust the margin as needed */
-    width: 100px; /* Set the desired width */
-    height: 200px; /* Maintain aspect ratio */
+    width: 150px; /* Set the desired width */
+    height: 150px; /* Maintain aspect ratio */
     border-radius: 50%; /* Make the image circular */
     border: 2px solid #333; /* Add a border, optional */
 }
+
