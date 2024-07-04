@@ -65,19 +65,55 @@ p {
     width: 300px;
     height: 300px;
     border-radius: 50%;
-    background: conic-gradient(
-        red 0% 25%, 
-        blue 25% 50%, 
-        green 50% 75%, 
-        yellow 75% 100%
-    );
     clip-path: circle(50% at 50% 50%);
-    opacity: 0;
-    transition: opacity 0.3s ease-in-out;
+    display: none;
 }
 
-.profile-image:hover + .skills-donut {
-    opacity: 1;
+.profile-container:hover .skills-donut {
+    display: block;
+}
+
+.skill {
+    position: absolute;
+    width: 50%;
+    height: 50%;
+    transform-origin: 100% 100%;
+    background: var(--color);
+    clip-path: polygon(100% 100%, 100% 0, 0 0);
+}
+
+.skill::before {
+    content: attr(data-skill);
+    position: absolute;
+    top: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #fff;
+    padding: 2px 5px;
+    border-radius: 3px;
+    box-shadow: 0 0 3px rgba(0,0,0,0.2);
+    white-space: nowrap;
+    display: none;
+}
+
+.profile-container:hover .skill {
+    display: block;
+}
+
+.skill:nth-child(1) {
+    transform: rotate(var(--start)) skewX(calc(var(--end) - var(--start)));
+}
+
+.skill:nth-child(2) {
+    transform: rotate(var(--start)) skewX(calc(var(--end) - var(--start)));
+}
+
+.skill:nth-child(3) {
+    transform: rotate(var(--start)) skewX(calc(var(--end) - var(--start)));
+}
+
+.skill:nth-child(4) {
+    transform: rotate(var(--start)) skewX(calc(var(--end) - var(--start)));
 }
 
 .statement {
