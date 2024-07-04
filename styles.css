@@ -69,7 +69,7 @@ h3 {
     display: none;
 }
 
-.profile-container:hover .skills-donut {
+.profile-container:hover .skills-ring {
     display: block;
 }
 
