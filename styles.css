@@ -7,6 +7,12 @@ body {
     position: relative;
 }
 
+
+
+/*Title Code*/
+
+
+/*Contains Title and img*/
 .container {
     position: absolute;
     top: 20px; 
@@ -14,6 +20,7 @@ body {
     text-align: left; 
 }
 
+/*contains names and occupation*/
 .name-box {
     position: relative;
     display: flex;
@@ -21,23 +28,33 @@ body {
     align-items: flex-start;
 }
 
+/*general properties*/
 h1, h2, h3 {
     margin: 0;
     color: #333;
 }
 
+/*Name*/
 h1 {
     font-size: 3em;
 }
 
+/*Last Name*/
 h2 {
     font-size: 2.5em;
     margin-left: 20px;
 }
 
+/*Ocuppation*/
 h3 {
     font-size: 1.5em;
 }
+
+
+
+/*Image Code*/
+
+
 
 .profile-container {
     position: relative;
@@ -57,11 +74,11 @@ h3 {
     position: absolute;
     top: 40%;
     left: 40%;
-    width: 500px; /* Increase size to add space for text */
-    height: 500px; /* Increase size to add space for text */
+    width: 300px; /* Increase size to add space for text */
+    height: 300px; /* Increase size to add space for text */
     border-radius: 50%;
     transform: translate(-50%, -50%);
-    border: 10px solid rgba(51, 51, 51, 0.5);
+    border: 40px solid rgba(51, 51, 51, 0.5);
     display: none;
 }
 
@@ -84,12 +101,24 @@ h3 {
     margin: 0 10px;
 }
 
+
+
+/*Purpose Statment Code */
+
+
+
 .statement {
     position: absolute;
     top: 600px; 
     left: 20px;
     max-width: 40%;
 }
+
+
+
+/*Buttons Code */
+
+
 
 .button-container {
     position: absolute;
