@@ -55,10 +55,10 @@ h3 {
 
 .ring {
     position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 380px; /* Increase size to add space for text */
-    height: 380px; /* Increase size to add space for text */
+    top: 40%;
+    left: 40%;
+    width: 500px; /* Increase size to add space for text */
+    height: 500px; /* Increase size to add space for text */
     border-radius: 50%;
     transform: translate(-50%, -50%);
     border: 10px solid rgba(51, 51, 51, 0.5);
