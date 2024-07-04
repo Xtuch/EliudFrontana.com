@@ -21,7 +21,7 @@ body {
     align-items: flex-start;
 }
 
-h1, h2, h3 {
+h1, h2, h3{
     margin: 0;
     color: #333;
 }
@@ -53,45 +53,19 @@ h3 {
     transition: all 0.3s ease-in-out;
 }
 
-.skills-ring {
+.ring {
     position: absolute;
     top: 0;
     left: 0;
     width: 300px;
     height: 300px;
     border-radius: 50%;
-    clip-path: circle(50% at 50% 50%);
+    border: 10px solid rgba(51, 51, 51, 0.5);
+    box-shadow: 0 0 0 10px rgba(51, 51, 51, 0.5); 
     display: none;
 }
 
-.profile-container:hover .skills-ring {
-    display: block;
-}
-
-.skill {
-    position: absolute;
-    width: 50%;
-    height: 50%;
-    transform-origin: 100% 100%;
-    background: var(--color);
-    clip-path: polygon(100% 100%, 100% 0, 0 0);
-    transform: rotate(var(--start)) skewX(calc(var(--end) - var(--start)));
-}
-
-.skill::before {
-    content: attr(data-skill);
-    position: absolute;
-    top: -30px;
-    left: 50%;
-    transform: translateX(-50%);
-    background-color: #fff;
-    padding: 2px 5px;
-    border-radius: 3px;
-    box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
-    white-space: nowrap;
-}
-
-.profile-container:hover .skill::before {
+.profile-container:hover .ring {
     display: block;
 }
 
