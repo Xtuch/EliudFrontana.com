@@ -21,7 +21,7 @@ body {
     align-items: flex-start;
 }
 
-h1, h2, h3{
+h1, h2, h3 {
     margin: 0;
     color: #333;
 }
@@ -37,11 +37,6 @@ h2 {
 
 h3 {
     font-size: 1.5em;
-}
-
-.verse {
-    font-size: 1.5em;
-    margin-left: 60px;
 }
 
 .profile-container {
@@ -80,6 +75,7 @@ h3 {
     transform-origin: 100% 100%;
     background: var(--color);
     clip-path: polygon(100% 100%, 100% 0, 0 0);
+    transform: rotate(var(--start)) skewX(calc(var(--end) - var(--start)));
 }
 
 .skill::before {
@@ -91,29 +87,12 @@ h3 {
     background-color: #fff;
     padding: 2px 5px;
     border-radius: 3px;
-    box-shadow: 0 0 3px rgba(0,0,0,0.2);
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
     white-space: nowrap;
-    display: none;
 }
 
-.profile-container:hover .skill {
+.profile-container:hover .skill::before {
     display: block;
-}
-
-.skill:nth-child(1) {
-    transform: rotate(var(--start)) skewX(calc(var(--end) - var(--start)));
-}
-
-.skill:nth-child(2) {
-    transform: rotate(var(--start)) skewX(calc(var(--end) - var(--start)));
-}
-
-.skill:nth-child(3) {
-    transform: rotate(var(--start)) skewX(calc(var(--end) - var(--start)));
-}
-
-.skill:nth-child(4) {
-    transform: rotate(var(--start)) skewX(calc(var(--end) - var(--start)));
 }
 
 .statement {
