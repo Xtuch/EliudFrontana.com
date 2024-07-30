@@ -5,49 +5,69 @@ body {
     background-color: #f0f0f0;
     height: 100vh;
     position: relative;
+    overflow-x: hidden; /* Prevent horizontal scroll */
 }
 
 
 
-/*Title Code*/
 
 
-/*Contains Title and img*/
-.container {
-    position: absolute;
-    top: 20px; 
-    left: 20px;
-    text-align: left; 
-}
 
-/*contains names and occupation*/
-.name-box {
-    position: relative;
+
+
+
+/* Sidebar Code */
+
+
+
+
+
+
+
+
+
+.sidebar {
+    position: fixed; /* Fixed position */
+    top: 0;
+    left: 0;
+    width: 300px; /* Width of the sidebar */
+    height: 100vh; /* Full viewport height */
+    background-color: #fff; /* Background color */
+    border-right: 4px solid #333; /* Border on the right */
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1); /* Optional shadow */
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    justify-content: normal; /* Center items vertically */
+    align-items: center; /* Center items horizontally */
 }
 
-/*general properties*/
-h1, h2, h3 {
+/* Title section */
+.container {
+    text-align: center; /* Center text in sidebar */
+    margin-top: 10px;
+}
+
+/* Name box with custom font */
+.name-box {
+    margin-top: 100px; /* Space from the bottom of the sidebar */
+}
+
+/* Apply 'Carter One' font to name */
+h1 {
+    font-family: 'Carter One', cursive; /* Use the Google Font */
+    font-size: 2.5em;
     margin: 0;
     color: #333;
+    text-align: center; /* Center align text */
 }
 
-/*Name*/
-h1 {
-    font-size: 3em;
-}
-
-/*Last Name*/
+/* Occupation styling */
 h2 {
-    font-size: 2.5em;
-    margin-left: 20px;
-}
-
-/*Ocuppation*/
-h3 {
     font-size: 1.5em;
+    margin: 0;
+    text-align: center; /* Center align text */
+    margin-top: 100px;
 }
 
 
@@ -56,74 +76,40 @@ h3 {
 
 
 
+/* Profile container for image */
 .profile-container {
-    position: relative;
-    margin-top: 20px;
-    margin-left: 40px;
+    margin-top: 100px; /* Space from the top of the sidebar */
 }
 
 .profile-image {
-    width: 300px;
-    height: 300px;
+    width: 200px; /* Adjust width */
+    height: 200px; /* Adjust height */
     border-radius: 50%;
     border: 4px solid #333;
-    transition: all 0.3s ease-in-out;
-}
-
-.ring {
-    position: absolute;
-    top: 40%;
-    left: 40%;
-    width: 300px; /* Increase size to add space for text */
-    height: 300px; /* Increase size to add space for text */
-    border-radius: 50%;
-    transform: translate(-50%, -50%);
-    border: 40px solid rgba(51, 51, 51, 0.5);
-    display: none;
-}
-
-.profile-container:hover .ring {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.skill {
-    width: 50px;
-    height: 50px;
-    background-color: var(--color);
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #fff;
-    font-size: 12px;
-    margin: 0 10px;
 }
 
 
 
-/*Purpose Statment Code */
 
 
 
-.statement {
-    position: absolute;
-    top: 600px; 
-    left: 20px;
-    max-width: 40%;
-}
 
 
 
-/*Buttons Code */
+/* Button Code */
+
+
+
+
+
+
 
 
 
 .button-container {
     position: absolute;
     top: 300px; 
-    left: 800px; 
+    left: 320px; /* Adjust to account for sidebar width */
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
