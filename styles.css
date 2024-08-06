@@ -28,13 +28,10 @@ body {
 
 .sidebar {
     position: fixed; /* Fixed position */
-    top: 0;
-    left: 0;
-    width: 300px; /* Width of the sidebar */
+    width: 40vh; /* Width of the sidebar */
     height: 100vh; /* Full viewport height */
     background-color: #fff; /* Background color */
     border-right: 4px solid #333; /* Border on the right */
-    padding: 20px;
     box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1); /* Optional shadow */
     display: flex;
     flex-direction: column;
@@ -45,29 +42,27 @@ body {
 /* Title section */
 .container {
     text-align: center; /* Center text in sidebar */
-    margin-top: 10px;
 }
 
 /* Name box with custom font */
 .name-box {
-    margin-top: 100px; /* Space from the bottom of the sidebar */
+    margin-top: 15vh; /* Space from the bottom of the sidebar */
 }
 
 /* Apply 'Carter One' font to name */
 h1 {
     font-family: 'Carter One', cursive; /* Use the Google Font */
     font-size: 2.5em;
-    margin: 0;
     color: #333;
     text-align: center; /* Center align text */
 }
 
 /* Occupation styling */
 h2 {
+    font-family: 'Carter One', cursive; /* Use the Google Font */
     font-size: 1.5em;
-    margin: 0;
     text-align: center; /* Center align text */
-    margin-top: 100px;
+    margin-top: 10vh;
 }
 
 
@@ -78,14 +73,14 @@ h2 {
 
 /* Profile container for image */
 .profile-container {
-    margin-top: 100px; /* Space from the top of the sidebar */
+    margin-top: 10vh; /* Space from the top of the sidebar */
 }
 
 .profile-image {
-    width: 200px; /* Adjust width */
-    height: 200px; /* Adjust height */
+    width: 30vh; /* Adjust width */
+    height: 30vh; /* Adjust height */
     border-radius: 50%;
-    border: 4px solid #333;
+    border: 1vh solid #333;
 }
 
 
@@ -109,7 +104,7 @@ h2 {
 .button-container {
     position: absolute;
     top: 300px; 
-    left: 320px; /* Adjust to account for sidebar width */
+    left: 500px; /* Adjust to account for sidebar width */
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
