@@ -4,21 +4,21 @@ body {
     font-family: Arial, sans-serif;
     background-color: #f0f0f0;
     height: 100vh;
-    position: relative;
-    overflow-x: hidden; /* Prevent horizontal scroll */
+    overflow: hidden; /* Prevent scrolling */
 }
 
 /* Sidebar Code */
 .sidebar {
     position: fixed; /* Fixed position */
-    width: 40vh; /* Width of the sidebar */
+    top: 0;
+    left: 0;
+    width: 20vw; /* Width of the sidebar */
     height: 100vh; /* Full viewport height */
     background-color: #fff; /* Background color */
-    border-right: 4px solid #333; /* Border on the right */
+    border-right: 0.5vw solid #333; /* Border on the right */
     box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1); /* Optional shadow */
     display: flex;
     flex-direction: column;
-    justify-content: normal; /* Center items vertically */
     align-items: center; /* Center items horizontally */
 }
 
@@ -29,13 +29,13 @@ body {
 
 /* Name box with custom font */
 .name-box {
-    margin-top: 15vh; /* Space from the top of the sidebar */
+    margin-top: 10vh; /* Space from the top of the sidebar */
 }
 
 /* Apply 'Carter One' font to name */
 h1 {
     font-family: 'Carter One', cursive; /* Use the Google Font */
-    font-size: 2.5em;
+    font-size: 2.5vw; /* Font size in vw */
     color: #333;
     text-align: center; /* Center align text */
 }
@@ -43,37 +43,37 @@ h1 {
 /* Occupation styling */
 h2 {
     font-family: 'Carter One', cursive; /* Use the Google Font */
-    font-size: 1.5em;
+    font-size: 1.5vw; /* Font size in vw */
     text-align: center; /* Center align text */
-    margin-top: 10vh;
+    margin-top: 5vh;
 }
 
 /* Profile container for image */
 .profile-container {
-    margin-top: 10vh; /* Space from the top of the name box */
+    margin-top: 5vh; /* Space from the top of the name box */
 }
 
 .profile-image {
-    width: 30vh; /* Adjust width */
-    height: 30vh; /* Adjust height */
+    width: 15vw; /* Adjust width */
+    height: 15vw; /* Adjust height */
     border-radius: 50%;
-    border: 1vh solid #333;
+    border: 0.5vw solid #333;
 }
 
 /* Button Code */
 .button-container {
-    margin-left: 40vh; /* Adjust to account for sidebar width */
+    margin-left: 20vw; /* Adjust to account for sidebar width */
     display: flex;
     justify-content: center; /* Center items horizontally */
     align-items: center; /* Center items vertically */
     height: 100vh; /* Full viewport height */
     flex-wrap: wrap; /* Allow buttons to wrap */
-    gap: 2vh;
+    gap: 2vw;
 }
 
 .circle-button {
-    width: 10vh;
-    height: 10vh;
+    width: 10vw;
+    height: 10vw;
     border-radius: 50%;
     background-color: #333;
     color: #fff;
@@ -83,8 +83,8 @@ h2 {
     cursor: pointer;
     transition: transform 0.3s ease-in-out;
     text-align: center; /* Center text within button */
-    padding: 1vh; /* Add padding to handle text wrapping */
-    font-size: 1.2vh; /* Adjust font size for better fit */
+    padding: 1vw; /* Add padding to handle text wrapping */
+    font-size: 1.2vw; /* Adjust font size for better fit */
 }
 
 .circle-button:hover {
