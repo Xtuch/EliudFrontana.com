@@ -8,24 +8,7 @@ body {
     overflow-x: hidden; /* Prevent horizontal scroll */
 }
 
-
-
-
-
-
-
-
-
 /* Sidebar Code */
-
-
-
-
-
-
-
-
-
 .sidebar {
     position: fixed; /* Fixed position */
     width: 40vh; /* Width of the sidebar */
@@ -46,7 +29,7 @@ body {
 
 /* Name box with custom font */
 .name-box {
-    margin-top: 15vh; /* Space from the bottom of the sidebar */
+    margin-top: 15vh; /* Space from the top of the sidebar */
 }
 
 /* Apply 'Carter One' font to name */
@@ -65,15 +48,9 @@ h2 {
     margin-top: 10vh;
 }
 
-
-
-/*Image Code*/
-
-
-
 /* Profile container for image */
 .profile-container {
-    margin-top: 10vh; /* Space from the top of the sidebar */
+    margin-top: 10vh; /* Space from the top of the name box */
 }
 
 .profile-image {
@@ -83,36 +60,20 @@ h2 {
     border: 1vh solid #333;
 }
 
-
-
-
-
-
-
-
-
 /* Button Code */
-
-
-
-
-
-
-
-
-
 .button-container {
-    position: absolute;
-    top: 300px; 
-    left: 500px; /* Adjust to account for sidebar width */
+    margin-left: 40vh; /* Adjust to account for sidebar width */
     display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
+    justify-content: center; /* Center items horizontally */
+    align-items: center; /* Center items vertically */
+    height: 100vh; /* Full viewport height */
+    flex-wrap: wrap; /* Allow buttons to wrap */
+    gap: 2vh;
 }
 
 .circle-button {
-    width: 60px;
-    height: 60px;
+    width: 10vh;
+    height: 10vh;
     border-radius: 50%;
     background-color: #333;
     color: #fff;
@@ -121,6 +82,9 @@ h2 {
     justify-content: center;
     cursor: pointer;
     transition: transform 0.3s ease-in-out;
+    text-align: center; /* Center text within button */
+    padding: 1vh; /* Add padding to handle text wrapping */
+    font-size: 1.2vh; /* Adjust font size for better fit */
 }
 
 .circle-button:hover {
