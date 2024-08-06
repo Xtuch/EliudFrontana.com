@@ -1,8 +1,8 @@
 body {
     margin: 0;
     padding: 0;
-    font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
+    font-family: 'Open Sans', sans-serif;
+    background-color: #606060;
     height: 100vh;
     overflow: hidden; /* Prevent scrolling */
 }
@@ -14,12 +14,13 @@ body {
     left: 0;
     width: 20vw; /* Width of the sidebar */
     height: 100vh; /* Full viewport height */
-    background-color: #fff; /* Background color */
+    background-color: #1a1a1a; /* Background color */
     border-right: 0.5vw solid #333; /* Border on the right */
     box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1); /* Optional shadow */
     display: flex;
     flex-direction: column;
     align-items: center; /* Center items horizontally */
+    color: #f0f0f0; /* Sidebar text color */
 }
 
 /* Title section */
@@ -36,21 +37,22 @@ body {
 h1 {
     font-family: 'Carter One', cursive; /* Use the Google Font */
     font-size: 2.5vw; /* Font size in vw */
-    color: #333;
+    color: #fff; /* White color for name */
     text-align: center; /* Center align text */
 }
 
 /* Occupation styling */
 h2 {
-    font-family: 'Carter One', cursive; /* Use the Google Font */
+    font-family: 'Open Sans', sans-serif; /* Use a clean font */
     font-size: 1.5vw; /* Font size in vw */
     text-align: center; /* Center align text */
-    margin-top: 5vh;
+    margin-top: 15vh;
+    color: #ffffff; /* Light gray color for occupation */
 }
 
 /* Profile container for image */
 .profile-container {
-    margin-top: 5vh; /* Space from the top of the name box */
+    margin-top: 15vh; /* Space from the top of the name box */
 }
 
 .profile-image {
@@ -72,21 +74,31 @@ h2 {
 }
 
 .circle-button {
-    width: 10vw;
-    height: 10vw;
+    width: 15vw;
+    height: 15vw;
     border-radius: 50%;
-    background-color: #333;
-    color: #fff;
+    background-color: #1a1a1a; /* Dark background color */
+    color: #fff; /* White text color */
     display: flex;
     align-items: center;
     justify-content: center;
     cursor: pointer;
-    transition: transform 0.3s ease-in-out;
+    transition: transform 0.3s ease-in-out, background-color 0.3s;
     text-align: center; /* Center text within button */
     padding: 1vw; /* Add padding to handle text wrapping */
     font-size: 1.2vw; /* Adjust font size for better fit */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add shadow for buttons */
+    flex-direction: column; /* Arrange icon and text vertically */
 }
 
 .circle-button:hover {
     transform: scale(1.2);
+    background-color: #333; /* Slightly lighter color on hover */
+}
+
+/* Styling for button icons */
+.button-icon {
+    width: 5vw; /* Adjust width of the icon */
+    height: auto; /* Maintain aspect ratio */
+    margin-bottom: 0.5vw; /* Space between icon and text */
 }

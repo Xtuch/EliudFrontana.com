@@ -18,8 +18,12 @@ For Heavy Titles:
 For Content:
 "Tajawal" Google fonts
 
+Links for Icons
 
-
-PENDING
-
-convert px to vh
+experience: https://www.iconsdb.com/white-icons/brain-icon.html
+education: ...
+achievements: https://www.iconsdb.com/white-icons/medal-icon.html
+extracurriculars: https://www.iconsdb.com/white-icons/note-icon.html#google_vignette
+skills: https://www.iconsdb.com/white-icons/robot-icon.html#google_vignette
+personal information: https://www.iconsdb.com/white-icons/user-icon.html
+languages: https://www.iconsdb.com/white-icons/speech-bubble-icon.html
