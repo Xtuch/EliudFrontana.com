@@ -1,3 +1,4 @@
+/* HTML Body */
 body {
     margin: 0;
     padding: 0;
@@ -7,7 +8,8 @@ body {
     overflow: hidden;
 }
 
-.home {
+/* HomeScreen */
+.HomeScreen {
     display: flex;
     position: fixed;
     top: 0;
@@ -21,8 +23,8 @@ body {
     flex-direction: column;
 }
 
-/* Sidebar */
-.sidebar {
+/* HomeScreenSidebar */
+.HomeScreenSidebar {
     position: fixed;
     top: 0;
     left: 0;
@@ -37,15 +39,17 @@ body {
     color: #f0f0f0;
 }
 
-/* Title */
-.container {
+/* Sidebar element container */
+.SidebarContent {
     text-align: center;
 }
 
-.name-box {
+/* Sidebar Text */
+.SidebarText {
     margin-top: 10vh;
 }
 
+/* Name */
 h1 {
     font-family: 'Carter One', cursive;
     font-size: 2.5vw;
@@ -53,6 +57,7 @@ h1 {
     text-align: center;
 }
 
+/* Career */
 h2 {
     font-family: 'Open Sans', sans-serif;
     font-size: 1.5vw;
@@ -61,19 +66,21 @@ h2 {
     color: #ffffff;
 }
 
-.profile-container {
+/* Image container */
+.SidebarImageContainer {
     margin-top: 15vh;
 }
 
-.profile-image {
+/* Image */
+.SidebarImage {
     width: 15vw;
     height: 15vw;
     border-radius: 50%;
     border: 0.5vw solid #333;
 }
 
-/* Button Container */
-.button-container {
+/* Home screen button container */
+.HomeScreenButtonContainer {
     margin-left: 20vw;
     display: flex;
     justify-content: center;
@@ -83,7 +90,8 @@ h2 {
     gap: 2vw;
 }
 
-.circle-button {
+/* Home screen button style */
+.HomeScreenButton {
     width: 15vw;
     height: 15vw;
     border-radius: 50%;
@@ -101,19 +109,21 @@ h2 {
     flex-direction: column;
 }
 
-.circle-button:hover {
+/* Home screen button when hovered style */
+.HomeScreenButton:hover {
     transform: scale(1.2);
     background-color: #333;
 }
 
-.button-icon {
+/* Icon on the button */
+.ButtonIcon {
     width: 5vw;
     height: auto;
     margin-bottom: 0.5vw;
 }
 
 /* Hidden Experience Screen */
-.experience-screen {
+.ExperienceScreen {
     display: none;
     position: fixed;
     top: 0;
@@ -127,11 +137,36 @@ h2 {
     flex-direction: column;
 }
 
-/* Background Images for Experience Sections */
-.PrivateMathTeacher-screen, 
-.PrivateProgrammingTutor-screen, 
-.RoboticsInstructor-screen, 
-.SchoolTeacher-screen {
+.ExperienceButtonContainer {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2vw;
+    margin-top: 2vw;
+}
+
+.ExperienceButton {
+    width: 15vw;
+    height: 5vw;
+    border-radius: 1vw;
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out, background-color 0.3s;
+    font-size: 1.2vw;
+    text-align: center;
+    padding: 0.5vw 1vw;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Experience section subdivision styles */
+.PrivateMathTeacherScreen, 
+.PrivateProgrammingTutorScreen, 
+.RoboticsInstructorScreen, 
+.SchoolTeacherScreen {
     display: none;
     position: fixed;
     top: 0;
@@ -142,29 +177,31 @@ h2 {
     background-position: center;
     background-repeat: no-repeat;
     color: #fff;
-    display: flex;
+    display: none;
     justify-content: center;
     align-items: center;
     flex-direction: column;
 }
 
-.PrivateMathTeacher-screen {
+/* Associating each screen with its image */
+.PrivateMathTeacherScreen {
     background-image: url('PrivateMathTeacher.jpg');
 }
 
-.PrivateProgrammingTutor-screen {
+.PrivateProgrammingTutorScreen {
     background-image: url('PrivateProgrammingTutor.jpg');
 }
 
-.RoboticsInstructor-screen {
+.RoboticsInstructorScreen {
     background-image: url('RoboticsInstructor.jpg');
 }
 
-.SchoolTeacher-screen {
+.SchoolTeacherScreen {
     background-image: url('SchoolTeacher.jpg');
 }
 
-.return-button {
+/* Return button style */
+.ReturnButton {
     position: absolute;
     top: 2vw;
     right: 2vw;
@@ -178,6 +215,7 @@ h2 {
     transition: background-color 0.3s;
 }
 
-.return-button:hover {
+/* Return button when hovered style */
+.ReturnButton:hover {
     background-color: #555;
 }

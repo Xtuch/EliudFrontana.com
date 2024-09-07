@@ -1,30 +1,45 @@
-// Get the necessary elements
-const experienceButton = document.getElementById("experience-button");
-const experienceScreen = document.getElementById("experience-screen");
-const returnButton = document.getElementById("return-button");
+// Division elements
 
-// Experience section buttons and screens
-const privateMathTeacherButton = document.querySelector(".experience-button:nth-child(1)");
-const privateMathTeacherScreen = document.getElementById("PrivateMathTeacher-screen");
-const returnExperienceButtonMathTeacher = document.getElementById("return-experience-button");
+// Experience division
+const experienceButton = document.getElementById("ToExperienceFromHomeButton");
+const experienceScreen = document.getElementById("ExperienceScreen");
+const returnButton = document.getElementById("ToHomeFromExperienceButton");
 
-const privateProgrammingTutorButton = document.querySelector(".experience-button:nth-child(2)");
-const privateProgrammingTutorScreen = document.getElementById("PrivateProgrammingTutor-screen");
-const returnExperienceButtonTutor = document.getElementById("return-experience-button-tutor");
+// Experience subdivion elements
 
-const roboticsInstructorButton = document.querySelector(".experience-button:nth-child(3)");
-const roboticsInstructorScreen = document.getElementById("RoboticsInstructor-screen");
-const returnExperienceButtonRobotics = document.getElementById("return-experience-button-robotics");
+//Private Math Teacher Subdivision
+const privateMathTeacherButton = document.querySelector(".ExperienceButton:nth-child(1)");
+const privateMathTeacherScreen = document.getElementById("PrivateMathTeacherScreen");
+const returnExperienceButtonMathTeacher = document.getElementById("ToExperienceFromPrivateMathTeacherButton");
 
-const schoolTeacherButton = document.querySelector(".experience-button:nth-child(4)");
-const schoolTeacherScreen = document.getElementById("SchoolTeacher-screen");
-const returnExperienceButtonSchool = document.getElementById("return-experience-button-school");
+//Private Programming Tutor Subdivision
+const privateProgrammingTutorButton = document.querySelector(".ExperienceButton:nth-child(2)");
+const privateProgrammingTutorScreen = document.getElementById("PrivateProgrammingTutorScreen");
+const returnExperienceButtonTutor = document.getElementById("ToExperienceFromPrivateProgrammingTutorButton");
+
+//Robotics Instructor Subdivision
+const roboticsInstructorButton = document.querySelector(".ExperienceButton:nth-child(3)");
+const roboticsInstructorScreen = document.getElementById("RoboticsInstructorScreen");
+const returnExperienceButtonRobotics = document.getElementById("ToExperienceFromRoboticsInstructorButton");
+
+//School Teacher Tutor Subdivision
+const schoolTeacherButton = document.querySelector(".ExperienceButton:nth-child(4)");
+const schoolTeacherScreen = document.getElementById("SchoolTeacherScreen");
+const returnExperienceButtonSchool = document.getElementById("ToExperienceFromSchoolTeacherButton");
 
 // Function to show the experience screen
 experienceButton.addEventListener("click", function() {
-    document.getElementById("home").style.display = "none";
+    document.getElementById("HomeScreen").style.display = "none";
     experienceScreen.style.display = "flex";
 });
+
+
+
+// Functions
+
+
+
+//Show functions
 
 // Function to show the Private Math Teacher screen
 privateMathTeacherButton.addEventListener("click", function() {
@@ -50,10 +65,12 @@ schoolTeacherButton.addEventListener("click", function() {
     schoolTeacherScreen.style.display = "flex";
 });
 
+//Return functions
+
 // Function to return to the main screen
 returnButton.addEventListener("click", function() {
     experienceScreen.style.display = "none";
-    document.getElementById("home").style.display = "flex";
+    document.getElementById("HomeScreen").style.display = "flex";
 });
 
 // Function to return to the experience screen from Private Math Teacher
