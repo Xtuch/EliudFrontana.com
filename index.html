@@ -22,35 +22,35 @@
         </div>
 
         <div class="HomeScreenButtonContainer">
-            <div class="HomeScreenButton" id="ToExperienceFromHomeButton">
+            <div class="CircleButton" id="ToExperienceFromHomeButton">
                 <img src="experience.png" alt="Experience Icon" class="ButtonIcon">
                 Experience
             </div>
-            <div class="HomeScreenButton" id="ToEducationFromHomeButton">
+            <div class="CircleButton" id="ToEducationFromHomeButton">
                 <img src="education.png" alt="Education Icon" class="ButtonIcon">
                 Education
             </div>
-            <div class="HomeScreenButton" id="ToAchievementsFromHomeButton">
+            <div class="CircleButton" id="ToAchievementsFromHomeButton">
                 <img src="achievements.png" alt="Achievements Icon" class="ButtonIcon">
                 Achievements
             </div>
-            <div class="HomeScreenButton" id="ToExtracurricularsFromHomeButton">
+            <div class="CircleButton" id="ToExtracurricularsFromHomeButton">
                 <img src="extracurriculars.png" alt="Extracurriculars Icon" class="ButtonIcon">
                 Extracurriculars
             </div>
-            <div class="HomeScreenButton" id="ToReferencesFromHomeButton">
+            <div class="CircleButton" id="ToReferencesFromHomeButton">
                 <img src="references.png" alt="References Icon" class="ButtonIcon">
                 References
             </div>
-            <div class="HomeScreenButton" id="ToPersonalInformationFromHomeButton">
+            <div class="CircleButton" id="ToPersonalInformationFromHomeButton">
                 <img src="personalInformation.png" alt="Personal Information Icon" class="ButtonIcon">
                 Personal Information
             </div>
-            <div class="HomeScreenButton" id="ToSkillsFromHomeButton">
+            <div class="CircleButton" id="ToSkillsFromHomeButton">
                 <img src="skills.png" alt="Skills Icon" class="ButtonIcon">
                 Skills
             </div>
-            <div class="HomeScreenButton" id="ToLanguageFromHomeButton">
+            <div class="CircleButton" id="ToLanguageFromHomeButton">
                 <img src="language.png" alt="Language Icon" class="ButtonIcon">
                 Language
             </div>
@@ -61,12 +61,12 @@
     <div class="Screen" id="ExperienceScreen">
         <h1>Experience</h1>
         <div class="ExperienceButtonContainer">
-            <div class="ExperienceButton">Private Math Teacher</div>
-            <div class="ExperienceButton">Private Programming Tutor</div>
-            <div class="ExperienceButton">Robotics Instructor</div>
-            <div class="ExperienceButton">School Teacher</div>
+            <div class="RectangleButton">Private Math Teacher</div>
+            <div class="RectangleButton">Private Programming Tutor</div>
+            <div class="RectangleButton">Robotics Instructor</div>
+            <div class="RectangleButton">School Teacher</div>
         </div>
-        <button class="ReturnButton" id="ToHomeFromExperienceButton">Return to Main Screen</button>
+        <button class="ReturnButton" id="ToHomeFromExperienceButton">Return</button>
     </div>
 
     <!-- Hidden PrivateMathTeacher Screen -->
@@ -79,12 +79,15 @@
                 the topic through engaging tutoring sessions to help them enjoy the
                 subject.
             </p>
+            <div class="ResourcesButton" id="PrivateMathTeacherToResourcesFromScreenButton">Resources</div>
         </div>
-        <button class="ReturnButton" id="ToExperienceFromPrivateMathTeacherButton">Return to Experience Screen</button>
+        <button class="ReturnButton" id="ToExperienceFromPrivateMathTeacherButton">Return</button>
     </div>
 
     <!-- Hidden PrivateMathTeacher Resources -->
-     <div class= "Screen" id="PrivateMathTeacherToResourcesFromScreen"></div>
+     <div class= "Screen" id="PrivateMathTeacherResourcesScreen">
+        <button class="ReturnButton" id="PrivateMathTeacherToScreenFromResourcesButton">Return</button>
+     </div>
 
     <!-- Hidden PrivateProgrammingTutor Screen -->
     <div class="PrivateProgrammingTutorScreen" id="PrivateProgrammingTutorScreen">
@@ -94,10 +97,15 @@
                 a didactic manner, allowing them to develop their own video games while
                 simultaneously discovering the fundamentals of programming and
                 gradually learning more complex topics.
-                
             </p>
+            <div class="ResourcesButton" id="PrivateProgrammingTutorToResourcesFromScreenButton">Resources</div>
         </div>
-        <button class="ReturnButton" id="ToExperienceFromPrivateProgrammingTutorButton">Return to Experience Screen</button>
+        <button class="ReturnButton" id="ToExperienceFromPrivateProgrammingTutorButton">Return</button>
+    </div>
+
+    <!-- Hidden PrivateProgrammingTutor Resources -->
+    <div class= "Screen" id="PrivateProgrammingTutorResourcesScreen">
+        <button class="ReturnButton" id="PrivateProgrammingTutorToScreenFromResourcesButton">Return</button>
     </div>
 
     <!-- Hidden RoboticsInstructor Screen -->
@@ -110,10 +118,15 @@
                 worked with teens aged 10 to 18, using materials such as Lego and
                 Arduino. I taught various topics to help them succeed in FIRST
                 competitions.
-                
             </p>
+            <div class="ResourcesButton" id="RoboticsInstructorToResourcesFromScreenButton">Resources</div>
         </div>
-        <button class="ReturnButton" id="ToExperienceFromRoboticsInstructorButton">Return to Experience Screen</button>
+        <button class="ReturnButton" id="ToExperienceFromRoboticsInstructorButton">Return</button>
+    </div>
+
+    <!-- Hidden RoboticsInstructor Resources -->
+    <div class= "Screen" id="RoboticsInstructorResourcesScreen">
+        <button class="ReturnButton" id="RoboticsInstructorToScreenFromResourcesButton">Return</button>
     </div>
 
     <!-- Hidden SchoolTeacher Screen -->
@@ -126,50 +139,56 @@
                 the topic through engaging tutoring sessions to help them enjoy the
                 subject.
             </p>
+            <div class="ResourcesButton" id="SchoolTeacherToResourcesFromScreenButton">Resources</div>
         </div>
-        <button class="ReturnButton" id="ToExperienceFromSchoolTeacherButton">Return to Experience Screen</button>
+        <button class="ReturnButton" id="ToExperienceFromSchoolTeacherButton">Return</button>
+    </div>
+
+    <!-- Hidden SchoolTeacher Resources -->
+    <div class= "Screen" id="SchoolTeacherResourcesScreen">
+        <button class="ReturnButton" id="SchoolTeacherToScreenFromResourcesButton">Return</button>
     </div>
 
     <!-- Hidden Education Screen -->
     <div class="Screen" id="EducationScreen">
         <h1>Education</h1>
-        <button class="ReturnButton" id="ToHomeFromEducationButton">Return to Main Screen</button>
+        <button class="ReturnButton" id="ToHomeFromEducationButton">Return</button>
     </div>
 
     <!-- Hidden Achievements Screen -->
     <div class="Screen" id="AchievementsScreen">
         <h1>Achievements</h1>
-        <button class="ReturnButton" id="ToHomeFromAchievementsButton">Return to Main Screen</button>
+        <button class="ReturnButton" id="ToHomeFromAchievementsButton">Return</button>
     </div>
 
     <!-- Hidden Extracurriculars Screen -->
     <div class="Screen" id="ExtracurricularsScreen">
         <h1>Extracurriculars</h1>
-        <button class="ReturnButton" id="ToHomeFromExtracurricularsButton">Return to Main Screen</button>
+        <button class="ReturnButton" id="ToHomeFromExtracurricularsButton">Return</button>
     </div>
 
     <!-- Hidden References Screen -->
     <div class="Screen" id="ReferencesScreen">
         <h1>References</h1>
-        <button class="ReturnButton" id="ToHomeFromReferencesButton">Return to Main Screen</button>
+        <button class="ReturnButton" id="ToHomeFromReferencesButton">Return</button>
     </div>
 
     <!-- Hidden Personal Information Screen -->
     <div class="Screen" id="PersonalInformationScreen">
         <h1>Personal Information</h1>
-        <button class="ReturnButton" id="ToHomeFromPersonalInformationButton">Return to Main Screen</button>
+        <button class="ReturnButton" id="ToHomeFromPersonalInformationButton">Return</button>
     </div>
 
     <!-- Hidden Skills Screen -->
     <div class="Screen" id="SkillsScreen">
         <h1>Skills</h1>
-        <button class="ReturnButton" id="ToHomeFromSkillsButton">Return to Main Screen</button>
+        <button class="ReturnButton" id="ToHomeFromSkillsButton">Return</button>
     </div>
 
     <!-- Hidden Language Screen -->
     <div class="Screen" id="LanguageScreen">
         <h1>Language</h1>
-        <button class="ReturnButton" id="ToHomeFromLanguageButton">Return to Main Screen</button>
+        <button class="ReturnButton" id="ToHomeFromLanguageButton">Return</button>
     </div>
 
     <script src="script.js"></script>

@@ -91,7 +91,7 @@ h2 {
 }
 
 /* Home screen button style */
-.HomeScreenButton {
+.CircleButton {
     width: 15vw;
     height: 15vw;
     border-radius: 50%;
@@ -145,7 +145,7 @@ h2 {
     margin-top: 2vw;
 }
 
-.ExperienceButton {
+.RectangleButton {
     width: 15vw;
     height: 5vw;
     border-radius: 1vw;
@@ -245,6 +245,25 @@ h2 {
     overflow: visible; /* Hides the content until it's fully visible */
     animation: moveUp 3s ease-in-out forwards;
 }
+
+.ResourcesButton {
+    position: absolute;
+    right: 47vw;
+    margin-top: 30vh;
+    width: 10vw;
+    height: 10vw;
+    border-radius: 50%;
+    background-color: #1a1a1a;
+    color: #fff;
+    font-size: 1.2vw;
+    
+    /* Center the text */
+    display: flex;
+    align-items: center;   /* Vertical centering */
+    justify-content: center; /* Horizontal centering */
+    text-align: center;  /* Center-align for multiline text */
+}
+
 
 @keyframes moveUp {
     
