@@ -122,20 +122,20 @@ h2 {
     margin-bottom: 0.5vw;
 }
 
-/* Hidden Experience Screen */
-.ExperienceScreen {
+/* Default Screen */
+.Screen{
     display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    background-color: #1a1a1a;
-    color: #fff;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background-color: #1a1a1a;
+        color: #fff;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
 
 .ExperienceButtonContainer {
     display: flex;
@@ -179,8 +179,8 @@ h2 {
     color: #fff;
     display: none;
     justify-content: center;
-    align-items: center;
-    flex-direction: column;
+    align-items: flex-end;
+    flex-direction: row;
 }
 
 /* Associating each screen with its image */
@@ -198,104 +198,6 @@ h2 {
 
 .SchoolTeacherScreen {
     background-image: url('SchoolTeacher.jpg');
-}
-
-.EducationScreen{
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    background-color: #1a1a1a;
-    color: #fff;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-
-.AchievementsScreen{
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    background-color: #1a1a1a;
-    color: #fff;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-
-.ExtracurricularsScreen{
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    background-color: #1a1a1a;
-    color: #fff;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-
-.ReferencesScreen{
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    background-color: #1a1a1a;
-    color: #fff;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-
-.PersonalInformationScreen{
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    background-color: #1a1a1a;
-    color: #fff;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-
-.SkillsScreen{
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    background-color: #1a1a1a;
-    color: #fff;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-
-.LanguageScreen{
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    background-color: #1a1a1a;
-    color: #fff;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
 }
 
 /* Return button style */
@@ -316,4 +218,41 @@ h2 {
 /* Return button when hovered style */
 .ReturnButton:hover {
     background-color: #555;
+}
+
+.MovingParagraph{
+
+    text-align: center;
+    margin-top: 10vh;
+    right: 25%;
+    width: 50%;
+    position: absolute;
+    padding: 1vw 2vw;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 1vw;
+    font-size: 1.2vw;
+    
+
+}
+
+.MovingCenterContainer{
+
+    position: relative;
+    width: 100%;
+    text-align: center;
+    overflow: visible; /* Hides the content until it's fully visible */
+    animation: moveUp 3s ease-in-out forwards;
+}
+
+@keyframes moveUp {
+    
+    0% {
+        transform: translateY(100%);
+    }
+    100% {
+        transform: translateY(-70vh);
+    }
+
 }
