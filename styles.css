@@ -1,277 +1,147 @@
-/* HTML Body */
-body {
+* {
     margin: 0;
     padding: 0;
-    font-family: 'Open Sans', sans-serif;
-    background-color: #606060;
-    height: 100vh;
-    overflow: hidden;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
 }
 
-/* HomeScreen */
-.HomeScreen {
+body {
+    background-color: #f4f4f4;
+    color: #333;
     display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    width: 90vw;
+    max-width: 1200px;
+    height: 100%;
+}
+
+/* Sidebar Styling */
+.sidebar {
     position: fixed;
     top: 0;
     left: 0;
-    width: 100vw;
-    height: 100vh;
-    background-color: #606060;
-    color: #fff;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-
-/* HomeScreenSidebar */
-.HomeScreenSidebar {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 20vw;
-    height: 100vh;
-    background-color: #1a1a1a;
-    border-right: 0.5vw solid #333;
-    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    width: 60px;
+    height: 100%;
+    background-color: #4CAF50; /* Green */
+    color: white;
     display: flex;
     flex-direction: column;
     align-items: center;
-    color: #f0f0f0;
+    padding-top: 20px;
+    z-index: 1000;
 }
 
-/* Sidebar element container */
-.SidebarContent {
-    text-align: center;
-}
-
-/* Sidebar Text */
-.SidebarText {
-    margin-top: 10vh;
-}
-
-/* Name */
-h1 {
-    font-family: 'Carter One', cursive;
-    font-size: 2.5vw;
-    color: #fff;
-    text-align: center;
-}
-
-/* Career */
-h2 {
-    font-family: 'Open Sans', sans-serif;
-    font-size: 1.5vw;
-    text-align: center;
-    margin-top: 15vh;
-    color: #ffffff;
-}
-
-/* Image container */
-.SidebarImageContainer {
-    margin-top: 15vh;
-}
-
-/* Image */
-.SidebarImage {
-    width: 15vw;
-    height: 15vw;
-    border-radius: 50%;
-    border: 0.5vw solid #333;
-}
-
-/* Home screen button container */
-.HomeScreenButtonContainer {
-    margin-left: 20vw;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    flex-wrap: wrap;
-    gap: 2vw;
-}
-
-/* Home screen button style */
-.CircleButton {
-    width: 15vw;
-    height: 15vw;
-    border-radius: 50%;
-    background-color: #1a1a1a;
-    color: #fff;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    transition: transform 0.3s ease-in-out, background-color 0.3s;
-    text-align: center;
-    padding: 1vw;
-    font-size: 1.2vw;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    flex-direction: column;
-}
-
-/* Home screen button when hovered style */
-.HomeScreenButton:hover {
-    transform: scale(1.2);
-    background-color: #333;
-}
-
-/* Icon on the button */
-.ButtonIcon {
-    width: 5vw;
-    height: auto;
-    margin-bottom: 0.5vw;
-}
-
-/* Default Screen */
-.Screen{
-    display: none;
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100vw;
-        height: 100vh;
-        background-color: #1a1a1a;
-        color: #fff;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-    }
-
-.ExperienceButtonContainer {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 2vw;
-    margin-top: 2vw;
-}
-
-.RectangleButton {
-    width: 15vw;
-    height: 5vw;
-    border-radius: 1vw;
-    background-color: #333;
-    color: #fff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-    transition: transform 0.3s ease-in-out, background-color 0.3s;
-    font-size: 1.2vw;
-    text-align: center;
-    padding: 0.5vw 1vw;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-/* Experience section subdivision styles */
-.PrivateMathTeacherScreen, 
-.PrivateProgrammingTutorScreen, 
-.RoboticsInstructorScreen, 
-.SchoolTeacherScreen {
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    color: #fff;
-    display: none;
-    justify-content: center;
-    align-items: flex-end;
-    flex-direction: row;
-}
-
-/* Associating each screen with its image */
-.PrivateMathTeacherScreen {
-    background-image: url('PrivateMathTeacher.jpg');
-}
-
-.PrivateProgrammingTutorScreen {
-    background-image: url('PrivateProgrammingTutor.jpg');
-}
-
-.RoboticsInstructorScreen {
-    background-image: url('RoboticsInstructor.jpg');
-}
-
-.SchoolTeacherScreen {
-    background-image: url('SchoolTeacher.jpg');
-}
-
-/* Return button style */
-.ReturnButton {
-    position: absolute;
-    top: 2vw;
-    right: 2vw;
-    padding: 1vw 2vw;
-    background-color: #333;
-    color: #fff;
+/* Button for menu toggle (hamburger) */
+.menu-toggle {
+    background-color: #4CAF50;
     border: none;
-    border-radius: 1vw;
+    color: white;
+    font-size: 30px;
     cursor: pointer;
-    font-size: 1.2vw;
-    transition: background-color 0.3s;
+    padding: 10px;
+    margin-bottom: 20px;
 }
 
-/* Return button when hovered style */
-.ReturnButton:hover {
-    background-color: #555;
-}
-
-.MovingParagraph{
-
-    text-align: center;
-    margin-top: 10vh;
-    right: 25%;
-    width: 50%;
-    position: absolute;
-    padding: 1vw 2vw;
-    background-color: #333;
-    color: #fff;
-    border: none;
-    border-radius: 1vw;
-    font-size: 1.2vw;
-    
-
-}
-
-.MovingCenterContainer{
-
-    position: relative;
-    width: 100%;
-    text-align: center;
-    overflow: visible; /* Hides the content until it's fully visible */
-    animation: moveUp 3s ease-in-out forwards;
-}
-
-.ResourcesButton {
-    position: absolute;
-    right: 47vw;
-    margin-top: 30vh;
-    width: 10vw;
-    height: 10vw;
-    border-radius: 50%;
-    background-color: #1a1a1a;
-    color: #fff;
-    font-size: 1.2vw;
-    
-    /* Center the text */
+/* Nav links container */
+.nav-links {
     display: flex;
-    align-items: center;   /* Vertical centering */
-    justify-content: center; /* Horizontal centering */
-    text-align: center;  /* Center-align for multiline text */
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.nav-links ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.nav-links li {
+    margin-bottom: 20px;
+}
+
+.nav-links a {
+    color: white;
+    font-size: 18px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+.nav-links a i {
+    margin-right: 10px; /* Space between icon and text */
+}
+
+.nav-links a:hover {
+    background-color: #333; /* Darker background on hover */
+    border-radius: 5px;
+    padding: 10px;
+}
+
+/* For responsiveness */
+@media screen and (max-width: 768px) {
+    .sidebar {
+        width: 50px;
+    }
+
+    .nav-links a {
+        font-size: 16px;
+    }
+
+    .nav-links i {
+        font-size: 18px;
+    }
 }
 
 
-@keyframes moveUp {
-    
-    0% {
-        transform: translateY(100%);
-    }
-    100% {
-        transform: translateY(-70vh);
-    }
+.main-content {
+    flex-grow: 1;
+    padding: 20px;
+    background-color: white;
+}
 
+.main-content h1 {
+    font-size: 2.5rem;
+    color: #2e3b4e;
+    margin-bottom: 20px;
+}
+
+.main-content p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #1a73e8;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    margin-top: 20px;
+}
+
+.btn:hover {
+    background-color: #0e59b4;
+}
+
+.section {
+    margin-top: 50px;
+}
+
+.section h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: #2e3b4e;
+}
+
+.section p {
+    font-size: 1.2rem;
+    line-height: 1.6;
 }
