@@ -1,26 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Education</title>
-        <link rel="stylesheet" href="styles.css">
-    </head>
-    <body>
-        <header>
-            <div class="navbarTitle">Eliud's Resume</div>
-            <nav class="navbar">
-                <ul>
-                    <li><a href="home.html">Home</a></li>
-                    <li><a href="education.html">Education</a></li>
-                    <li><a href="work.html">Work</a></li>
-                    <li><a href="first.html">FIRST</a></li>
-                    <li><a href="recommendations.html">Recommendations</a></li>
-                    <li><a href="https://e-school.alwaysdata.net/" target="_blank">Business</a></li>
-                    <li><a href="skills.html">Skills</a></li>
-                </ul>
-            </nav>
-        </header>
-    </body> 
+
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Education</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <div class="navbarTitle">Eliud's skills</div>
+        <nav class="navbar">
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="education.html">Education</a></li>
+                <li><a href="work.html">Work</a></li>
+                <li><a href="first.html">FIRST</a></li>
+                <li><a href="recommendations.html">Recommendations</a></li>
+                <li><a href="https://e-school.alwaysdata.net/" target="_blank">Business</a></li>
+                <li><a href="skills.html">Skills</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Background Image Section -->
+    <section class="background">
+        <h1>Skills</h1>
+    </section>
+
+    <section class="intro">
+                
+        <div class="title">Extracurriculars</div>
+
+        <div class="videoContainer">
+            <video width="800" height="400" controls>
+                <source src="your-video.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        
+        <div class= "description">lorem ipsum</div>
+        
+    </section>
+
+    <section class="gallery">
+
+        <div class="title">My Skills Gallery</div>
+
+        <div class="mediaContainer">
+            <img src="pictures\skills\vasijas\Vasijas1.JPG" alt="Vasijas1" class="gallery-item" onclick="openLightbox(this)">
+            <video src="project2.mp4" class="gallery-item" onclick="openLightbox(this)" controls></video>
+            <img src="project3.jpg" alt="Project 3" class="gallery-item" onclick="openLightbox(this)">
+        </div>
+
+    </section>
+    
+    <div id="lightbox" class="lightbox">
+        <span class="close" onclick="closeLightbox()">&times;</span>
+        <div id="lightbox-content"></div>
+    </div>
+    
+    <footer>
+        <p>© 2024 Eliud Frontana</p>
+        <p>(+52) 55 2091 6525 / eliud.frontana@gmail.com</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
 </html>
