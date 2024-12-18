@@ -194,3 +194,19 @@ footer {
     width: 100%;
     bottom: 0;
 }
+
+/*Announcement*/
+
+.announcement {
+    background-color: #ffcc00; /* Yellow background to grab attention */
+    color: #333; /* Dark text for readability */
+    font-size: 1.5rem; /* Slightly larger font size */
+    text-align: center;
+    padding: 1rem;
+    border: 2px solid #000; /* Black border for emphasis */
+    margin: 1rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000; /* Ensures it stays on top of other content */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional shadow for a polished look */
+}
