@@ -50,7 +50,6 @@ header {
 
 .background {
     height: 100vh; /* Adjust the height of the background */
-    background-image: url('pictures/skills/pianoBackground.jpg'); /* Replace 'your-image.jpg' with your image file */
     background-size: cover; /* Make the image cover the entire area */
     background-position: center; /* Center the background image */
     display: flex;
